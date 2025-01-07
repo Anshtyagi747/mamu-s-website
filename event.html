@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collage with Prices</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f8cdda, #1d2b64);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .collage-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .collage-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .collage-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .collage-item .info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .collage-item .info h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .collage-item .info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>some of our previous projects</h1>
+    <div class="collage">
+        <div class="collage-item">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="info">
+                <h3>Beautiful Scene</h3>
+                <p>$20</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="info">
+                <h3>Nature's Wonder</h3>
+                <p>$25</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image3.jpg" alt="Image 3">
+            <div class="info">
+                <h3>Peaceful Sunset</h3>
+                <p>$30</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image4.jpg" alt="Image 4">
+            <div class="info">
+                <h3>City Lights</h3>
+                <p>$35</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image5.jpg" alt="Image 5">
+            <div class="info">
+                <h3>Mountain Adventure</h3>
+                <p>$40</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image6.jpg" alt="Image 6">
+            <div class="info">
+                <h3>Beach Bliss</h3>
+                <p>$50</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image7.jpg" alt="Image 7">
+            <div class="info">
+                <h3>Forest Retreat</h3>
+                <p>$15</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image8.jpg" alt="Image 8">
+            <div class="info">
+                <h3>Desert Beauty</h3>
+                <p>$18</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image9.jpg" alt="Image 9">
+            <div class="info">
+                <h3>Dreamy Clouds</h3>
+                <p>$22</p>
+            </div>
+        </div>
+        <div class="collage-item">
+            <img src="image10.jpg" alt="Image 10">
+            <div class="info">
+                <h3>Vibrant Flowers</h3>
+                <p>$28</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Your Name | All Rights Reserved
+    </footer>
+</body>
+</html>
